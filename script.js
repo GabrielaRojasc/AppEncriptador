@@ -93,3 +93,10 @@ function desencriptarTexto(mensaje){
 
 }
 
+
+const btnCopiar = document.querySelector(".btn-copiar"); 
+    btnCopiar.addEventListener("click", copiar = () => {
+    let contenido = document.querySelector(".texto-resultado").textContent;
+    navigator.clipboard.writeText(contenido);
+    console.log("hola"); 
+});
