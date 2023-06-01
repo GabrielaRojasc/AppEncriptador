@@ -23,6 +23,12 @@ function encriptar(){
     resultado.textContent = encriptarTexto(cajatexto);
 }
 
+function desencriptar(){
+    ocultarAdelante();
+    let cajatexto = recuperarTexto()
+    resultado.textContent = desencriptarTexto(cajatexto);
+}
+
 function encriptarTexto(mensaje){
     let texto = mensaje;
     let textoFinal = "";
